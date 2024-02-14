@@ -18,18 +18,31 @@ body {
 }
 
 nav {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: relative;
 }
-
+@media (max-width: 768px) {
+  nav {
+    gap: 20px;
+  }
+}
 .welcome {
   font-size: 1.9rem;
   font-weight: 500;
 }
-
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 1.6rem;
+  }
+}
 .logo {
   height: 5.25rem;
 }
@@ -61,7 +74,13 @@ nav {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-
+@media (max-width: 767px) {
+  .login input {
+    padding: 5px 15px;
+    font-size: 1.3rem;
+    width: 10rem;
+}
+}
 .login input:focus {
   outline: none;
   border: 1px solid #ccc;
